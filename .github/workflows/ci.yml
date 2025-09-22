@@ -19,8 +19,8 @@ jobs:
           python-version: '3.13'
           cache: 'pip'
 
-      - name: Install Dependencies
-        run: pip install -r requirements.txt
+      - name: Install Project in Editable Mode
+        run: pip install -e .[dev]
 
-      - name: Run Pytest
+      - name: Run Tests with Pytest
         run: pytest

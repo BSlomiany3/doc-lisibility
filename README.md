@@ -34,7 +34,7 @@ Le but est de séparer automatiquement les scans de **bonne qualité** de ceux d
 
 Cloner le repo et installer en mode développement :
 
-```bash
+```powershell
 git clone https://github.com/BSlomiany3/doc-lisibility.git
 cd doc-lisibility
 python -m venv .venv
