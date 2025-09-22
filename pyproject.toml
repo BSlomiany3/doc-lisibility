@@ -3,20 +3,18 @@ requires = ["setuptools>=61.0", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "doc_lisibility"
-version = "0.1.0"
-description = "Segmentation et scoring de lisibilité de documents (OCR helpers)."
+name = "docReadibilityScorer_app"
+version = "1.0.0"
+description = "Segmentation et scoring de lisibilité de documents."
 readme = "README.md"
 requires-python = ">=3.8"
 license = { text = "MIT" }
 authors = [
-  { name = "Ton Nom", email = "toi@example.com" }
+  { name = "Baptiste Slomiany", email = "baptiste.slomiany@gmail.com" }
 ]
 keywords = ["ocr", "segmentation", "readability", "ml"]
 classifiers = [
-  "Programming Language :: Python :: 3",
-  "License :: OSI Approved :: MIT License",
-  "Operating System :: OS Independent"
+  "Programming Language :: Python :: 3"
 ]
 
 dependencies = [
