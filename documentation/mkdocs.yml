@@ -1,0 +1,37 @@
+site_name: Doc-Lisibility
+site_description: Documentation du scoreur de documents scannés
+site_author: Projet Doc-Lisibility
+repo_url: https://github.com/BSlomiany3/doc-lisibility
+
+nav:
+  - Accueil: index.md
+  - Installation & Utilisation: usage.md
+  - API Reference:
+      - Segmentation: api/segmentation.md
+      - Modèle: api/model.md
+      - Pipeline: api/pipeline.md
+      - Scorer: api/scorer.md
+
+theme:
+  name: material
+  language: fr
+
+plugins:
+  - search
+  - mkdocstrings:
+      handlers:
+        python:
+          options:
+            docstring_style: google
+            show_source: true
+            show_root_heading: true
+            heading_level: 2
+
+markdown_extensions:
+  - toc:
+      permalink: true
+  - admonition
+  - codehilite
+  - footnotes
+  - tables
+  - pymdownx.tasklist

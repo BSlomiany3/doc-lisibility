@@ -1,0 +1,44 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "doc_lisibility"
+version = "0.1.0"
+description = "Segmentation et scoring de lisibilité de documents (OCR helpers)."
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "MIT" }
+authors = [
+  { name = "Ton Nom", email = "toi@example.com" }
+]
+keywords = ["ocr", "segmentation", "readability", "ml"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent"
+]
+
+dependencies = [
+    "numpy>=1.21",
+    "pillow>=8.0",
+    "opencv-python>=4.5",
+    "torch>=1.13"
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=7.0",
+  "pytest-cov",
+  "black",
+  "mypy",
+  "flake8",
+  "mkdocs",
+  "mkdocs-material",
+  "mkdocstrings[python]",
+]
+
+[tool.pytest.ini_options]
+minversion = "6.0"
+addopts = "-q --disable-warnings"
+testpaths = ["tests"]
